@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F3EF" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/picture_selection"
+        android:textSize="18sp"
+        android:textColor="#4D4D4D"/>
+    
+    <Button 
+        android:id="@+id/btn_album"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/select_from_local"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/selector_btn_cyan_to_light"/>
+    
+    <Button 
+        android:id="@+id/btn_camera"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/take_photo"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/selector_btn_cyan_to_light"/>
+    
+    <Button 
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/cancel"
+        android:textSize="15sp"
+        android:textColor="#55DFC0"
+        android:background="@drawable/selector_btn_grey_to_dark_with_stroke"/>
+
+</LinearLayout>

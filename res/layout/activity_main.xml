@@ -1,0 +1,284 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FEFFF2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#55DFC0">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/main_title"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+        
+        <RelativeLayout 
+            android:id="@+id/bra_connection_layout"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"           
+            android:background="@drawable/selector_btn_cyan_to_dark">
+            
+            <ImageView 
+                android:id="@+id/iv_connection_left"
+                android:layout_width="55dp"
+                android:layout_height="29dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/bra_left_disconnected"/>
+            
+            <ImageView 
+                android:id="@+id/iv_connection_right"
+                android:layout_width="55dp"
+                android:layout_height="29dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_connection_left"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/bra_right_disconnected"/>
+            
+            <TextView
+                android:id="@+id/tv_electricity_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:text="0%"
+                android:textSize="12sp"
+                android:textColor="#ff0000"/>
+            
+            <TextView
+                android:id="@+id/tv_electricity_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="0%"
+                android:textSize="12sp"
+                android:textColor="#ff0000"/>
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        
+        <RelativeLayout 
+            android:id="@+id/btn_massage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+	        android:layout_marginRight="40dp"
+            android:background="@drawable/selector_main_btn">
+            
+	        <ImageView 	            
+	            android:layout_width="65dp"
+	            android:layout_height="65dp"
+	            android:layout_marginTop="10dp"
+	            android:layout_centerHorizontal="true"
+	            android:src="@drawable/selector_main_massage"/>
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="70dp"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/massaging"
+	             android:textColor="@drawable/selector_text_cyan_to_light"
+	            android:textSize="16sp"/>
+            
+        </RelativeLayout>
+
+        <RelativeLayout 
+            android:id="@+id/btn_steps"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/selector_main_btn">
+           
+	        <ImageView 	            
+	            android:layout_width="65dp"
+	            android:layout_height="65dp"
+	            android:layout_marginTop="10dp"
+	            android:layout_centerHorizontal="true"
+	            android:src="@drawable/selector_main_steps"/>
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="70dp"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/passometer"
+	             android:textColor="@drawable/selector_text_cyan_to_light"
+	            android:textSize="16sp"/>
+            
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        
+        <RelativeLayout 
+            android:id="@+id/btn_clock"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+	        android:layout_marginRight="40dp"
+            android:background="@drawable/selector_main_btn">
+            
+	        <ImageView 	            
+	            android:layout_width="65dp"
+	            android:layout_height="65dp"
+	            android:layout_marginTop="10dp"
+	            android:layout_centerHorizontal="true"
+	            android:src="@drawable/selector_main_clock"/>
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="70dp"
+	            android:gravity="center"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/healthy_reminder"
+	            android:textColor="@drawable/selector_text_cyan_to_light"
+	            android:textSize="16sp"/>
+            
+        </RelativeLayout>
+
+        <RelativeLayout 
+            android:id="@+id/btn_music"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/selector_main_btn">
+           
+	        <ImageView
+	            android:layout_width="65dp"
+	            android:layout_height="65dp"
+	            android:layout_marginTop="10dp"
+	            android:layout_centerHorizontal="true"
+	            android:src="@drawable/selector_main_music"/>
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="70dp"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/music_spa"
+	            android:textColor="@drawable/selector_text_cyan_to_light"
+	            android:textSize="16sp"/>
+            
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        
+        <RelativeLayout 
+            android:id="@+id/btn_mine"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+	        android:layout_marginRight="40dp"
+            android:background="@drawable/selector_main_btn">
+            
+	        <ImageView
+	            android:layout_width="65dp"
+	            android:layout_height="65dp"
+	            android:layout_marginTop="10dp"
+	            android:layout_centerHorizontal="true"
+	            android:src="@drawable/selector_main_mine"/>
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="70dp"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/me"
+	            android:textColor="@drawable/selector_text_cyan_to_light"
+	            android:textSize="16sp"/>
+            
+        </RelativeLayout>
+
+        <RelativeLayout 
+            android:id="@+id/btn_setting"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/selector_main_btn">
+           
+	        <ImageView
+	            android:layout_width="65dp"
+	            android:layout_height="65dp"
+	            android:layout_marginTop="10dp"
+	            android:layout_centerHorizontal="true"
+	            android:src="@drawable/selector_main_setting"/>
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="70dp"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/settings"
+	            android:textColor="@drawable/selector_text_cyan_to_light"
+	            android:textSize="16sp"/>
+            
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+   	<Button
+        android:id="@+id/btn_recognize"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="@drawable/selector_text_cyan_to_light"
+        android:background="@drawable/selector_main_recognizer"/>
+   	
+   	<View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+   	
+</LinearLayout>

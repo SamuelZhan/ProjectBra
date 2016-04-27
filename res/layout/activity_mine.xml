@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.tokool.bra"
+    android:id="@+id/mine_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FEFFF2" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#55DFC0">
+        
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/arrow_left"
+            android:background="@drawable/selector_btn_cyan_to_dark"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/me"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+               
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <com.tokool.bra.customview.RoundCornerImageView
+        android:id="@+id/btn_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/mine_head_image"
+    	custom:type="circle"/>
+    
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <TextView
+        android:id="@+id/btn_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="晴空溜鱼"
+        android:textSize="18sp"
+        android:textColor="#55DFC0"
+        android:drawableRight="@drawable/mine_pen"/>
+    
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+    
+    <RelativeLayout
+        android:id="@+id/btn_age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_btn_white_to_grey">        
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="@string/age"
+            android:textSize="16sp"
+            android:textColor="#4D4D4D"/>
+        
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:text="24"
+            android:textSize="16sp"
+            android:textColor="#4D4D4D"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="10dp"/>
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+    
+    <RelativeLayout
+        android:id="@+id/btn_height"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_btn_white_to_grey">        
+        
+        <TextView           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="@string/height"
+            android:textSize="16sp"
+            android:textColor="#4D4D4D"/>
+        
+        <TextView
+            android:id="@+id/tv_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:text="169cm"
+            android:textSize="16sp"
+            android:textColor="#4D4D4D"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="10dp"/>
+
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+    
+    <RelativeLayout
+        android:id="@+id/btn_weight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_btn_white_to_grey">        
+        
+        <TextView           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="@string/weight"
+            android:textSize="16sp"
+            android:textColor="#4D4D4D"/>
+        
+        <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:text="65kg"
+            android:textSize="16sp"
+            android:textColor="#4D4D4D"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="10dp"/>
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+    
+    <RelativeLayout
+        android:id="@+id/btn_stepLength"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_btn_white_to_grey">        
+        
+        <TextView           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="@string/step_length"
+            android:textSize="16sp"
+            android:textColor="#4D4D4D"/>
+        
+        <TextView
+            android:id="@+id/tv_stepLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:text="60cm"
+            android:textSize="16sp"
+            android:textColor="#4D4D4D"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="10dp"/>
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+    
+    <RelativeLayout
+        android:id="@+id/btn_targetSteps"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_btn_white_to_grey">        
+        
+        <TextView           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="@string/target"
+            android:textSize="16sp"
+            android:textColor="#4D4D4D"/>
+        
+        <TextView
+            android:id="@+id/tv_targetSteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:text="60cm"
+            android:textSize="16sp"
+            android:textColor="#4D4D4D"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="10dp"/>
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+    
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+        
+</LinearLayout>

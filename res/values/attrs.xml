@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="RoundProgressBar">
+        <attr name="progressColor" format="color"/>
+        <attr name="secondProgressColor" format="color"/>        
+        <attr name="progress" format="integer"/>
+        <attr name="progressWidth" format="dimension"/>
+        <attr name="max" format="integer"/>
+    </declare-styleable>
+    
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="type">
+            <enum name="circle" value="0"/>
+            <enum name="round" value="1"/>
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="CircleProgress">
+        <attr name="numOfCircles" format="integer"/>
+        <attr name="maxRadius" format="dimension"/>
+        <attr name="minRadius" format="dimension"/>
+        <attr name="rotateSpeedInMillis" format="integer"/>
+        <attr name="isClockwise" format="boolean"/>
+        <attr name="circleColor" format="color"/>
+    </declare-styleable>
+</resources>

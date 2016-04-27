@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FEFFF2" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#55DFC0">
+        
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/arrow_left"
+            android:background="@drawable/selector_btn_cyan_to_dark"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/binding_right_bra"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView 
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/circle_with_right_bra"
+            android:layout_centerInParent="true"/>
+        
+        <ImageView
+            android:id="@+id/bluetooth_icon"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/bluetooth_icon"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <LinearLayout 
+        android:id="@+id/listview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/searched_devices"
+            android:textColor="#888888"
+            android:textSize="15sp"/>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"/>
+        
+        <ListView 
+	        android:id="@+id/device_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="150dp"	        
+	        android:divider="#eeeeee"
+	        android:dividerHeight="1dp"/>
+        
+    </LinearLayout>
+    
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <Button
+        android:id="@+id/start_scan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/search_ble"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/selector_btn_cyan_to_light"/>
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

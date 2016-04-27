@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FEFFF2" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#55DFC0">
+        
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/arrow_left"
+            android:background="@drawable/selector_btn_cyan_to_dark"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/setting_language"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+        
+        <Button 
+            android:id="@+id/btn_ensure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/ok"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/selector_btn_cyan_to_dark"/>
+        
+    </RelativeLayout>
+    
+    <RadioGroup 
+        android:id="@+id/radiogroup_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <RadioButton 
+            android:id="@+id/btn_auto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_language"
+            android:text="@string/follow_system"
+            android:textColor="#4D4D4D"
+            android:textSize="16sp"
+            android:background="@drawable/selector_btn_white_to_grey"/>
+        
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="#eeeeee"/>
+        
+        <RadioButton 
+            android:id="@+id/btn_chinese"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_language"
+            android:text="中文简体"
+            android:textColor="#4D4D4D"
+            android:textSize="16sp"
+            android:background="@drawable/selector_btn_white_to_grey"/>
+        
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="#eeeeee"/>
+        
+        <RadioButton 
+            android:id="@+id/btn_english"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_language"
+            android:text="English"
+            android:textColor="#4D4D4D"
+            android:textSize="16sp"
+            android:background="@drawable/selector_btn_white_to_grey"/>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="#eeeeee"/>
+    </RadioGroup>
+    
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:background="@drawable/selector_btn_white_to_grey"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+	    <View 
+	        android:layout_width="5dp"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:background="#55DFC0"/>
+	    
+	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="10dp"
+	        android:orientation="vertical">
+	        
+		    <TextView 
+		        android:id="@+id/tv_song_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:singleLine="true"
+		        android:textColor="#000000"
+		        android:textSize="18sp"/>
+		    
+		    <TextView
+		        android:id="@+id/tv_song_info"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:singleLine="true"
+		        android:textColor="#969696"
+		        android:textSize="14sp"/>
+	    </LinearLayout>
+	    
+	    <ImageView 
+	        android:id="@+id/iv_trumpet"
+	        android:layout_width="18dp"
+	        android:layout_height="18dp"
+	        android:layout_gravity="center_vertical"
+	        android:src="@drawable/music_trumpet"/>
+	    
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+    
+
+</LinearLayout>
